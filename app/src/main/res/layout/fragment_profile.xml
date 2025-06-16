@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.Fragment.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:tint="@color/yellow"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_account" />
+
+        <TextView
+            android:fontFamily="@font/ubuntu_bold"
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textCapWords"
+            android:text="Name"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_3_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:layout_weight="1"
+                        android:text="Address"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtAddress"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="[Address]"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Contact Number"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtContactNum"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="[contact number]"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Age"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="[age]"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gender"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="[gender]"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnEditDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="30dp"
+
+                android:layout_marginHorizontal="50dp"
+                android:text="Edit Details"
+                android:backgroundTint="@color/yellow"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="20dp"
+            android:alpha=".25"
+
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Information"
+            android:textSize="18sp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="Username"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="Username"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:text="Password"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="********"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnChangePassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="30dp"
+                    android:text="change"
+
+                    android:backgroundTint="@color/yellow"
+                    android:textAllCaps="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="100dp"
+            android:layout_gravity="center"
+            android:text="Logout"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/gray_black"
+            android:textAllCaps="true" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

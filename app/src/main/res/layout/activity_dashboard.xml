@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.DashboardActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtWelcomeNoEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="JawApp"
+            android:textColor="@color/gray_black"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/FrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        style="@style/Widget.MaterialComponents.BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelVisibilityMode="selected"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/icon_selected"
+        app:itemTextColor="@drawable/icon_selected"
+        android:background="@drawable/bottomnav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

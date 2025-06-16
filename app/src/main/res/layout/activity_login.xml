@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".User.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="JawApp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="20dp"
+            android:textColor="@color/gray_black"
+            android:fontFamily="@font/ubuntu_bold"
+            android:layout_marginHorizontal="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lytUsername"
+            app:hintEnabled="false"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="20dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:fontFamily="@font/ubuntu_bold"
+                android:id="@+id/edtUserName"
+                android:hint="Enter Username"
+                android:singleLine="true"
+                android:inputType="text"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="20dp"
+            android:textColor="@color/gray_black"
+            android:fontFamily="@font/ubuntu_bold"
+            android:layout_marginHorizontal="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lytPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/ubuntu_bold"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Account yet?"
+                android:layout_marginLeft="100dp"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/gray_black"
+                android:fontFamily="@font/ubuntu_bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textSize="15dp"
+                android:id="@+id/btnSignup"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:textColor="@color/green"
+                android:fontFamily="@font/ubuntu_bold" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/btnLogin"
+            android:text="Log in"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

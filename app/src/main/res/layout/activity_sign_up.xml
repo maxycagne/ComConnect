@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.SignUpActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:elevation="0dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/yellow"
+            app:cardCornerRadius="15dp">
+            <ImageView
+                android:paddingLeft="6dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/arrowback">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="Sign up"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/gray_black"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/yellow"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="Register an"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/gray_black"
+                android:layout_marginLeft="30dp"
+                android:textSize="50sp" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="account"
+                android:layout_marginTop="-16dp"
+                android:textColor="@color/gray_black"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="50sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="20sp"
+                android:text="Personal Information"
+                android:textColor="@color/gray_black">
+            </TextView>
+
+                <TextView
+                    android:layout_width="430dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="15sp"
+                    android:text="First Name"
+                    android:textColor="@color/gray_black">
+                </TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/lytFirstName"
+                    android:layout_height="match_parent"
+                    app:hintEnabled="false"
+                    android:layout_marginHorizontal="10dp"
+                    app:endIconMode="clear_text"
+                   >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtFirstName"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter first name"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="15sp"
+                    android:text="Middle Name"
+                    android:textColor="@color/gray_black">
+                </TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    app:hintEnabled="false"
+                    android:id="@+id/lytMiddleName"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtMiddleName"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter middle name"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkboxMiddleName"
+                    android:layout_width="60dp"
+                    android:buttonTint="@color/yellow"
+                    android:layout_height="50dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="13sp"
+                    android:text="I have no legal middle name"
+                    android:textColor="@color/red">
+                </TextView>
+
+            </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="15sp"
+                    android:text="Last Name"
+                    android:textColor="@color/gray_black">
+                </TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    app:hintEnabled="false"
+                    app:endIconMode="clear_text"
+                    android:id="@+id/lytLastName"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtLastName"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter last name"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="15sp"
+                android:text="Gender"
+                android:textColor="@color/gray_black">
+            </TextView>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/radiogroup"
+                >
+
+                <RadioButton
+                    app:buttonTint="@color/yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textColor="@color/gray_black"
+                    android:text="Male"
+                    android:id="@+id/radioMale">
+
+                </RadioButton>
+
+                <RadioButton
+                    app:buttonTint="@color/yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textColor="@color/gray_black"
+                    android:text="Female"
+                    android:id="@+id/radioFemale">
+                </RadioButton>
+
+                <RadioButton
+                    app:buttonTint="@color/yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textColor="@color/gray_black"
+                    android:text="Others"
+                    android:id="@+id/radioOthers">
+                </RadioButton>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="15sp"
+                android:text="Age"
+                android:textColor="@color/gray_black">
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                app:hintEnabled="false"
+                app:endIconMode="clear_text"
+                android:id="@+id/lytAge"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtAge"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your age"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="15sp"
+                android:text="Phone number"
+                android:textColor="@color/gray_black">
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/lytPhoneNum"
+                app:hintEnabled="false"
+                app:endIconMode="clear_text"
+                app:prefixText="+63">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtPhoneNum"
+                    android:maxLength="10"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter phone number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="15sp"
+                    android:text="Address"
+                    android:textColor="@color/gray_black">
+                </TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    app:hintEnabled="false"
+                    app:endIconMode="clear_text"
+                    android:id="@+id/lytAddress"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtAddress"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter address"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/yellow"
+                android:layout_marginHorizontal="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="20sp"
+                android:text="Login Details"
+                android:textColor="@color/gray_black">
+            </TextView>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="15sp"
+                    android:text="Username"
+                    android:textColor="@color/gray_black">
+                </TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/lytUserName"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    app:hintEnabled="false"
+                    app:endIconMode="clear_text"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtUserName"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter username"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="15sp"
+                    android:text="Password"
+                    android:textColor="@color/gray_black">
+                </TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/lytpassword"
+                    android:layout_marginHorizontal="10dp"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtpassword"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:inputType="textPassword"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter password"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Password must meet all of the following criteria:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtCharacters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Must have at least eight (8) characters."
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/red"
+                app:drawableTint="@color/red" />
+
+            <TextView
+                android:id="@+id/txtUppercase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Must have at least one (1) uppercase letter."
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/red"
+                app:drawableTint="@color/red" />
+
+            <TextView
+                android:id="@+id/txtLowercase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Must have at least one (1) lowercase letter."
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/red"
+                />
+
+            <TextView
+                android:id="@+id/txtNumber"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="Must have at least one (1) number."
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/txtSymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Must have at least one (1) symbol."
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/txtSpace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Must not have a space."
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/green"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="15sp"
+                android:text="Confirm Password"
+                android:textColor="@color/gray_black">
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lytConfirmpassword"
+                android:layout_marginHorizontal="10dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtConfirmpassword"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter confirm password"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/btnSignUp"
+                android:text="Sign up"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
